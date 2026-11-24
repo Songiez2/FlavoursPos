@@ -1,6 +1,6 @@
 "use strict";
 
-const CACHE_NAME = "flavours-business-manager-v23";
+const CACHE_NAME = "flavours-business-manager-v24";
 const APP_SHELL = [
   "./",
   "./index.html",
