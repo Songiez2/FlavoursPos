@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#102447">
+  <meta name="description" content="Flavours Business Manager V2.3">
+  <link rel="manifest" href="./app.webmanifest">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <title>Flavours Business Manager V2.3</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- APPLICATION ROOT -->
+  <div id="app">
+
+    <!-- LOGIN ROOT -->
+    <div id="page-root"></div>
+
+    <!-- MAIN APPLICATION CONTENT -->
+    <div id="app-shell" style="display:none;">
+
+      <header class="app-header">
+        <div class="header-brand">
+          <h2>FLAVOURS</h2>
+          <span>BUSINESS MANAGER V1.9</span>
+        </div>
+
+        <div class="header-actions">
+          <span id="current-user"></span>
+          <button type="button" id="logout-btn" class="btn">
+            Logout
+          </button>
+        </div>
+      </header>
+
+      <div class="app-layout">
+
+        <!-- SIDEBAR -->
+        <aside id="sidebar" class="sidebar">
+          <nav id="main-navigation">
+
+            <button type="button" data-page="Dashboard">
+              Dashboard
+            </button>
+
+            <button type="button" data-page="Point of Sale">
+              Point of Sale
+            </button>
+
+            <button type="button" data-page="Inventory">
+              Inventory
+            </button>
+
+            <button type="button" data-page="Customers">
+              Customers
+            </button>
+
+            <button type="button" data-page="Suppliers">
+              Suppliers
+            </button>
+
+            <button type="button" data-page="Purchases">
+              Purchases
+            </button>
+
+            <button type="button" data-page="Purchase Returns">
+              Purchase Returns
+            </button>
+
+            <button type="button" data-page="Expenses">
+              Expenses
+            </button>
+
+            <button type="button" data-page="Reports">
+              Reports
+            </button>
+
+            <button type="button" data-page="Cash Closing">
+              Cash Closing
+            </button>
+
+            <button type="button" data-page="Staff">
+              Staff Management
+            </button>
+
+            <button type="button" data-page="Settings">
+              Settings
+            </button>
+
+          </nav>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main id="main-content" class="main-content">
+          <div id="app-content"></div>
+          <div id="content"></div>
+        </main>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- MODAL CONTAINER -->
+  <div id="modal-root"></div>
+
+  <!-- NOTIFICATION CONTAINER -->
+  <div id="toast-container" aria-live="polite"></div>
+
+  <!-- JAVASCRIPT -->
+  <script src="./supabase-config.js"></script>
+  <script type="module" src="./app.js"></script>
+
+</body>
+</html>
